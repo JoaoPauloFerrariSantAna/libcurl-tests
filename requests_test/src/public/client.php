@@ -1,6 +1,5 @@
 <?php 
 
-
 require_once "request_senders.php";
 
 use function Test\Senders\populate_user;

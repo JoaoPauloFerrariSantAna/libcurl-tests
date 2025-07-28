@@ -25,7 +25,7 @@ function prepare_get_request(CurlHandle $curl, string $server_addr): void {
 function prepare_post_request(CurlHandle $curl, string $server_addr, string $uri): void {
 	$headers = array(
 		"Accept" => MimeTypes::JSON,
-		"Content-Type" => MimeTypes::XWWW_FORM_ENCODED
+		"Content-Type" => MimeTypes::XWWW_FORM_ENCODED,
 	);
 
 	curl_setopt($curl, CURLOPT_URL, $server_addr);

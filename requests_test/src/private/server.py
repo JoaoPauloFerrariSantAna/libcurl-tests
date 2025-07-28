@@ -1,10 +1,8 @@
 from json import dumps
 from flask import Flask, request
+from server_types import JsonString, HttpResponse
 from mime_types import MimeTypes
 from http_status_code import HttpStatusCode
-
-type JsonString = str
-type HttpResponse = str
 
 server: Flask = Flask(__name__)
 
